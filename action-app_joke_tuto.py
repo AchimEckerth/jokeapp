@@ -6,4 +6,4 @@ def action_wrapper(hermes, intent_message):
     hermes.publish_end_session(intentMessage.session_id, result_sentence)
 
 with Hermes("localhost:1883") as h:
-    h.subscribe_intent("CrystalMethod:hello", action_wrapper).start()
+    h.subscribe_intent("snips-qOPRiLbJKW:Hallo", action_wrapper).start()
