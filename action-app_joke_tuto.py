@@ -2,6 +2,7 @@ from hermes_python.hermes import Hermes
 
 
 def action_wrapper(hermes, intent_message):
+    current_session_id = intent_message.session_id
     hermes.publish_end_session(current_session_id, "Lets go!")
 
 
